@@ -525,6 +525,7 @@ angular.module('mdColorPicker', [])
 
 				$scope.clearValue = function clearValue() {
 					ngModel.$setViewValue('');
+ 					ngModel.$render();
 				};
 				$scope.showColorPicker = function showColorPicker($event) {
 					if ( didJustClose ) {
